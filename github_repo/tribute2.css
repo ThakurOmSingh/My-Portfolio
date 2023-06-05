@@ -1,0 +1,115 @@
+html{
+    text-align: center;
+    margin-top: 0 auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    background-color: black;
+}
+#logo{
+    height:50px;
+    width:150px;
+    float: left;
+}
+nav {
+    background-color: #333;
+    height:50px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+left: 0;
+right: 0;
+margin-bottom: 2%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 51%;
+  }
+  
+  nav li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    
+  }
+  li a:hover{
+    background-color: white;
+    color: black;
+    height: 95%;
+  }
+
+
+#div1{
+    margin-top: 50px;
+    padding-top: 4%;
+    background-image:url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHgxMDU3NDA0LWltYWdlLWpvYjYzMC1mLWwwZzA3N2l6LmpwZw.jpg?s=kcGa8TpmS68NiXPm-IQedeuhI3YEtaAcxqrJN6TpmUA);
+    height:770;
+    
+}
+#div2{
+    background-image: url(https://t3.ftcdn.net/jpg/03/09/91/50/360_F_309915021_UVkRzZpK4AviNWDRzlCfbjqXr0GMpmyA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:670;
+}
+#div3{
+    color: white;
+    background-color: black;
+    height:250;
+}
+#inner1{
+    float: left;
+    background-image:url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHgxMDU3NDA0LWltYWdlLWpvYjYzMC1mLWwwZzA3N2l6LmpwZw.jpg?s=kcGa8TpmS68NiXPm-IQedeuhI3YEtaAcxqrJN6TpmUA);
+    
+    margin-left: 80;
+    margin-top: 50;
+    max-width: 730;
+    max-height: 560; 
+}
+#inner2{
+    margin-top: 100;
+    margin-right: 50;
+    float: right;
+    
+}
+#img1{
+    height: 500;
+    width: 500;
+    border: 20px solid black;
+}
+#img2{
+    height: 400;
+    width: 400;
+    border: 20px solid black;
+}
+.subtitle{
+    color: black;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    font-size:200%; 
+}
+.lift{
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.322);
+-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+margin-bottom: 30px;
+}
+
+.lift:hover {
+box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.377);
+-webkit-transform: scale(1.03, 1.03);
+transform: scale(1.03, 1.03);
+}
+.lift:hover::after {
+opacity: 1;
+}
