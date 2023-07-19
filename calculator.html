@@ -1,103 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
- 
+  
 <head>
-  <meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-<link rel="stylesheet" href="calculator.css">
-<!--   
-  <style>
-    
-  </style>
-   -->
-  
-  
-  
+  <link rel="icon" type="image/x-icon" href="calcy.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
   
   <script>
-function clearvalues() {
-  document.getElementById("result").value = " ";
-}
-function calculatevalues(){
-    var calculatedresult = document.getElementById("result").value;
-    document.getElementById("result").value= eval(calculatedresult);
-}1
-</script>
+    function clearValues() {
+      document.getElementById("result").value = "";
+    }
     
+    function calculateValues() {
+      var calculatedResult = document.getElementById("result").value;
+      document.getElementById("result").value = eval(calculatedResult);
+    }
+  </script>
 </head>
-
- 
+  
 <body>
-    <section id="nav_section">
-    
+  <section id="nav_section">
     <nav>
-        <div id="navigation">
+      <div id="navigation">
         <div>
           <img id="logo" src="my_logo.jpg" />
         </div>
         <div>
-        <ul>
-          <li><a href="index.html" target="_blank">Home</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="aboutme.html" target="_blank">About</a></li>
-          <li><a href="omresume(ccpd).pdf" target="_blank">View CV</a></li>
-          <li><a href="omresume(ccpd).pdf" download>Download CV</a></li>
-          <li><a href="contact.html" target="_blank">Contact Me</a></li>
-        </ul></div>
+          <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="aboutme.html" target="_blank">About</a></li>
+            <li><a href="omresume(ccpd).pdf" target="_blank">View CV</a></li>
+            <li><a href="omresume(ccpd).pdf" download>Download CV</a></li>
+            <li><a href="contact.html" target="_blank">Contact Me</a></li>
+          </ul>
         </div>
-      </nav>
-      
-    </section>
-    <section id="main_section">
+      </div>
+    </nav>
+  </section>
+  
+  <section id="main_section">
     <div id="main_div">
-
-    <h1 id="heading"><u>Simple Calculator</u></h1>
- 
-<table class="calculator" align="center" cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td colspan="3" id="disp"> <input class="display-box" type="text" id="result"  disabled /> </td>
-    
-  </tr>
-  <tr>
-    <td class="operator"> <input class="opt"  type="button" value="+" onclick="result.value +='+'" /> </td>
-    <td class="operator"> <input class="opt" type="button" value="-" onclick="result.value +='-'" /> </td>
-    <td class="operator"> <input class="opt" type="button" value="*" onclick="result.value +='*'" /> </td>
-  </tr>
-  <tr>
-    <td class="operator"> <input class="opt" type="button" value="/" onclick="result.value +='/'" /> </td>
-    <td class="operator"> <input class="opt" type="button" value="%" onclick="result.value +='%'" /> </td>
-    <td class="clear"> <input type="button" value="C" onclick="clearvalues()" id="clear" /> </td>
-  </tr>
-  <tr>
-    <td class="button"> <input class="btn" type="button" value="7" onclick="result.value +='7'" /> </td>
-    <td class="button"> <input class="btn" type="button" value="8" onclick="result.value +='8'" /> </td>
-    <td class="button"> <input class="btn" type="button" value="9" onclick="result.value +='9'" /> </td>
-    
-  </tr>
-  <tr>
-    <td class="button"> <input class="btn" type="button" value="4" onclick="result.value +='4'" /> </td>
-    <td class="button"> <input class="btn" type="button" value="5" onclick="result.value +='5'" /> </td>
-    <td class="button"> <input class="btn" type="button" value="6" onclick="result.value +='6'" /> </td>
-    
-  </tr>
-  <tr>
-    <td class="button"> <input class="btn" type="button" value="1" onclick="result.value +='1'" /> </td>
-    <td class="button"> <input class="btn" type="button" value="2" onclick="result.value +='2'" /> </td>
-    <td class="button"> <input class="btn" type="button" value="3" onclick="result.value +='3'" /> </td>
-    
-  </tr>
-  <tr>
-    <td class="operator" > <input class="opt" type="button" value="." onclick="result.value +='.'" /> </td>
-    <td class="button"> <input class="btn" type="button" value="0" onclick="result.value +='0'" /> </td>
-    <td class="operator"> <input class="opt" type="button" value="=" onclick="calculatevalues()" id="btn" /> </td>
-    
-  </tr>
-</table>
-    <br><br><br>
+      <h1 id="heading"><u>Simple Calculator</u></h1>
+  
+      <table class="calculator" align="center" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td colspan="3" id="disp"> <input class="display-box" type="text" id="result" disabled /> </td>
+        </tr>
+        <tr>
+          <td class="operator"> <input class="opt" type="button" value="+" onclick="result.value +='+'" /> </td>
+          <td class="operator"> <input class="opt" type="button" value="-" onclick="result.value +='-'" /> </td>
+          <td class="operator"> <input class="opt" type="button" value="*" onclick="result.value +='*'" /> </td>
+        </tr>
+        <tr>
+          <td class="operator"> <input class="opt" type="button" value="/" onclick="result.value +='/'" /> </td>
+          <td class="operator"> <input class="opt" type="button" value="%" onclick="result.value +='%'" /> </td>
+          <td class="clear"> <input type="button" value="C" onclick="clearValues()" id="clear" /> </td>
+        </tr>
+        <tr>
+          <td class="button"> <input class="btn" type="button" value="7" onclick="result.value +='7'" /> </td>
+          <td class="button"> <input class="btn" type="button" value="8" onclick="result.value +='8'" /> </td>
+          <td class="button"> <input class="btn" type="button" value="9" onclick="result.value +='9'" /> </td>
+        </tr>
+        <tr>
+          <td class="button"> <input class="btn" type="button" value="4" onclick="result.value +='4'" /> </td>
+          <td class="button"> <input class="btn" type="button" value="5" onclick="result.value +='5'" /> </td>
+          <td class="button"> <input class="btn" type="button" value="6" onclick="result.value +='6'" /> </td>
+        </tr>
+        <tr>
+          <td class="button"> <input class="btn" type="button" value="1" onclick="result.value +='1'" /> </td>
+          <td class="button"> <input class="btn" type="button" value="2" onclick="result.value +='2'" /> </td>
+          <td class="button"> <input class="btn" type="button" value="3" onclick="result.value +='3'" /> </td>
+        </tr>
+        <tr>
+          <td class="operator"> <input class="opt" type="button" value="." onclick="result.value +='.'" /> </td>
+          <td class="button"> <input class="btn" type="button" value="0" onclick="result.value +='0'" /> </td>
+          <td class="operator"> <input class="opt" type="button" value="=" onclick="calculateValues()" id="btn" /> </td>
+        </tr>
+      </table>
+      <br><br><br>
     </div>
-    </section>>
+  </section>
 </body>
- 
 </html>
