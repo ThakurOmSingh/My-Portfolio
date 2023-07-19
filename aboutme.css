@@ -3,20 +3,20 @@ nav{
     align-items: baseline;
     margin:0;
     padding:0;
-    position: fixed;
     top: 0;
-left: 0;
+    left: 0;
 right: 0;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 #logo{
     width: 75px;
     height: 75px;
     margin: 35px 10px 10px 35px;
+    transition: transform 0.3s ease; /* Add a transition effect for the logo */
 }
 li{
     display: inline;
@@ -32,6 +32,8 @@ button{
     border-color: blue;
     color: blue;
     cursor:pointer;
+    transition: background-color 0.3s ease; /* Add a transition effect for the background color */
+    
 }
 #btn-1{
     margin-right:20px ;
@@ -48,18 +50,24 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 3s ease;
 }
 
 #avatar{
     margin-top: 35px;
     width: 200px;
     height: 200px;
-    
+    transition: transform 1.3s ease;
 }
 h1{
     margin-top: 25px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 55px;
+    margin-bottom: 4vh;
+}
+section#head{
+    transition: color 0.3s ease; /* Add a transition effect for the text color */
+    
 }
 p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,4 +78,195 @@ p{
     
     width: 60px;
     height: 40px;
+    transition: transform 0.3s ease; 
 }
+
+#logo {
+    width: 75px;
+    height: 75px;
+    margin: 35px 10px 10px 35px;
+}
+
+li {
+    display: inline;
+    float: right;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+nav:hover {
+    background-color: #f9f9f9;
+}
+
+  nav:hover #logo {
+      transform: rotate(360deg);
+    }
+    
+    button:hover {
+        background-color: lightblue;
+    }
+  
+  #avatar:hover {
+      transform: scale(1.2);
+    }
+  
+  section#head:hover {
+    color: red;
+  }
+  
+  .logo:hover {
+    transform: rotate(360deg) ;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 480px)  {
+      
+    p#mylogo {
+        align-self: normal;
+    }
+    #logo {
+        width: 23vh;
+        height: 10vh;
+        margin: 4vh auto -3vh auto;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+#cont{
+    width: -webkit-fill-available;
+    height: 26vh;
+    margin-top: auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: auto;
+    margin-left: auto; */
+    margin: auto;
+}
+ul{
+    margin-top: 0px;
+}
+h1 {
+    text-align: -webkit-center;
+    max-width: 478px;
+}
+#main {
+    margin-top: -2vh;
+}
+p{
+    text-align: -webkit-center;
+max-width: 370px;
+margin: auto;
+}
+p#contacts{
+    width:38vh;
+    margin-top: revert;
+}
+
+p#line{
+    margin: 8vh auto auto auto;
+}
+h1.head{
+    margin-bottom: -3vh;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 708px){
+    nav {
+        display: flex;
+        align-items:normal;
+    }
+    
+    ul {
+        margin-left: auto;
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+      }
+      
+      li {
+          float: none;
+          margin-left: 10px;
+        }
+        
+        #mylogo {
+            margin-left: 0vh;
+        }
+    #cont {
+        width: -webkit-fill-available;
+        margin-top: -9vh;
+        margin-left: 7vh;
+        margin-right: 7vh;
+        height: 28vh;
+    }
+    h1 {
+        margin-top: -4vh;
+        text-align: -webkit-center;
+        max-width: 482px;
+        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: revert;
+     
+    }
+    p{
+        max-width: 409px;
+        text-align: -webkit-center;
+        margin: auto;
+    }
+    p#contacts{
+        margin-top: 7vh;
+    }
+    p#line {
+        margin: 5vh auto auto auto;
+    }
+    h1.head{
+        margin-bottom: 1vh;
+    }
+    }
+
+    @media only screen and (min-width: 709px) {
+        nav {
+            display: flex;
+            align-items:normal;
+            /* position: fixed; */
+          }
+          
+          ul {
+              margin-left: auto;
+              display: flex;
+              list-style-type: none;
+              align-items: center;
+            }
+            
+            li {
+                float: none;
+                margin-left: 10px;
+            }
+            
+            #mylogo {
+            margin-right: auto;
+        }
+        #cont {
+            width: -webkit-fill-available;
+            height: 37vh;
+            margin: -11vh 7vh 2vh 7vh;
+        }
+        h1{
+            text-align: -webkit-center;
+            margin-top: -11vh;
+        }
+        p#line {
+            margin: -7vh auto auto auto;
+        }
+        h1.head{
+            margin-bottom: 12vh;
+        }
+    }

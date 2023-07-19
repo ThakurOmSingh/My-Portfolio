@@ -1,220 +1,310 @@
 body{
-  height: 100%;
-  background: linear-gradient(30deg,#bdc3c7 , #2c3e50);
-  background-repeat: no-repeat;
-  margin-top: 8%;
-}
-#logo{
-    height:50px;
-    width:150px;
-    float: left;
-}
-nav {
-    background-color: #333;
-    height:50px;
-    color: #fff;
-    text-align: center;
-    position: fixed;
-    top: 0;
-left: 0;
-right: 0;
-/* margin-bottom: 2%; */
+  /*   height: 100%; */
+    background: linear-gradient(30deg,#bdc3c7 , #2c3e50);
+  /*   background-repeat: no-repeat; */
+    margin-top: 8%;
   }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  #logo{
+      height:50px;
+      width:150px;
+      float: left;
   }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 5px;
-    height: 100%;
-  }
-  
-  nav li a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+  nav {
+      background-color: #333;
+      height:50px;
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      top: 0;
+  left: 0;
+  right: 0;
+  /* margin-bottom: 2%; */
+    }
     
-  }
-  li a:hover{
-    background-color: white;
-    color: black;
-    height: 100%;
-  }
-  #cal{
-    background-color: #800080;
-    display: flex;
-    margin: 46px 35px 40px 25px;
-    border-radius: 0px 46px 0px 46px;
-    flex-direction: column;
-    min-width: 300px;
-    text-align:center;
-    max-height: 420px;
-  }
-  #to{
-    background-color: #393E46;
-    display: flex;
-    max-height: 420px;
-    margin: 46px 35px 46px 35px;
-    border-radius: 0px 46px 0px 46px;
-    align-content: center;
-    flex-direction: column;
-    min-width: 300px;
-    text-align: center;
-  }
-
-  #tri{
-    background-color: #e5167d;
-    display: flex;
-    max-height: 420px;
-    margin: 46px 25px 46px 35px;
-    border-radius: 0px 46px 0px 46px;
-    align-content: center;
-    flex-direction: column;
-    min-width: 300px;
-    text-align: center;
-  }
-
-  #port{
-    background-color: #e5167d;
-    display: flex;
-    max-height: 420px;
-    margin: 46px 10px 40px 176px;
-    border-radius: 0px 46px 0px 46px;
-    align-content: center;
-    flex-direction: column;
-    width: 300px;
-    text-align: center;
-  }
-  #you{
-    background-color: #800080;
-    display: flex;
-    margin: 46px 180px 46px 10px;
-    border-radius: 0px 46px 0px 46px;
-    flex-direction: column;
-    min-width: 300px;
-    text-align:center;
-    max-height: 420px;
-  }
-  #main{
-    /* background-color: brown; */
-    height: 900px;
-    display: flex;
-    margin: 0%;
-    padding:0;
-    justify-content: center;
-    height:530px;
-    /* justify-content: space-around; */
-  }
-  #main1{
-    /* background-color: brown; */
-    height: 900px;
-    display: flex;
-    margin: 0%;
-    padding:0;
-    justify-content: center;
-    justify-content: space-around;
-  }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 5px;
+      height: 100%;
+    }
+    
+    nav li a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      
+    }
+    li a:hover{
+      background-color: white;
+      color: black;
+      height: 100%;
+    }
+    #cal{
+      background-color: #800080;
+      display: flex;
+      /* margin: 46px 35px 40px 25px; */
+      border-radius: 0px 46px 0px 46px;
+      flex-direction: column;
+      min-width: 300px;
+      text-align:center;
+   
+    }
+    #to{
+      background-color: #393E46;
+      display: flex;
+      /* margin: 46px 35px 46px 35px; */
+      border-radius: 0px 46px 0px 46px;
+      align-content: center;
+      flex-direction: column;
+      min-width: 300px;
+      text-align: center;
+    }
   
-  #cal-img{
-    margin: 10px 10px 10px 10px;
-    height:200px;
-    width:200px;
-  }
-  #todo-img{
-    margin: 28px 25px 10px 25px;
-    height:182px;
-    width:200px
-  }
-  #tri-img{
-    margin: 28px 25px 10px 25px; ;
-    height:182px;
-    width:200px;
-    border-radius : 17%;
-  }
-  #port-img{
-    margin: 28px 25px 10px 25px; ;
-    height:182px;
-    width:200px;
-    border-radius : 17%;
-  }
-  #you-img{
-    margin: 28px 25px 10px 25px; ;
-    height:182px;
-    width:200px;
-    border-radius : 17%;
-  }
-
-  #cal-para{
-    display: flex;
-    flex-wrap: wrap;
-    max-width:200px;
-    margin-left: 45px;
-    /* text-align: justify; */
-    text-align: center;
-    /* color: #FFFF00; */
-    color: white;
-    text-decoration: wavy;
-  }
+    #tri{
+      background-color: #e5167d;
+      display: flex;
+      /* margin: 46px 25px 46px 35px; */
+      border-radius: 0px 46px 0px 46px;
+      align-content: center;
+      flex-direction: column;
+      min-width: 300px;
+      text-align: center;
+    }
   
-  #to-para{display: flex;
-    flex-wrap: wrap;
-    max-width:200px;
-    margin-left: 45px;
-    margin-top: 20px;
-    text-align: justify;
-    text-align: center;
-    color: white;
+    #port{
+      background-color: #e5167d;
+      /* margin: 46px 10px 40px 176px; */
+    }
+    #you{
+      background-color: #800080;
+      min-width: 300px;  
+    }
+    #school{
+      background-color: #393E46;
+    }
+    .main1_div{
+      display: flex;
+    
+      border-radius: 0px 46px 0px 46px;
+      align-content: center;
+      flex-direction: column;
+      width: 300px;
+      text-align: center;
+      
+    }
+    .anime_main_div{
+      transition: transform 0.3s ease;
+    }
+    .anime_main_div:hover {
+      transform: translateY(-5px);
+    }
+    #main{
+      /* background-color: brown; */
+      height: 900px;
+      display: flex;
+      margin: 0%;
+      padding:autopooo;
+      justify-content: center;
+      height:530px;
+      justify-content: space-around;
+    }
+    #main1{
+      /* background-color: brown; */
+      height: 900px;
+      display: flex;
+      margin: 0%;
+      padding:0 10px;
+      justify-content: center;
+      justify-content: space-around;
+    }
+  
+    
+    #cal-img{
+      margin: 10px 10px 10px 10px;
+      height:200px;
+      width:200px;
+    }
+    #todo-img{
+      margin: 28px 25px 10px 25px;
+      height:182px;
+      width:200px
+    }
+    #tri-img{
+      margin: 28px 25px 10px 25px; ;
+      height:182px;
+      width:200px;
+      border-radius : 17%;
+    }
+    
+    .main1-img{
+      margin: 28px 25px 10px 25px; ;
+      height:182px;
+      width:200px;
+      border-radius : 17%;
+    }
+  
+    #cal-para{
+      display: flex;
+      flex-wrap: wrap;
+      max-width:200px;
+      margin-left: 45px;
+      /* text-align: justify; */
+      text-align: center;
+      /* color: #FFFF00; */
+      color: white;
+      text-decoration: wavy;
+    }
+    
+    #to-para{display: flex;
+      flex-wrap: wrap;
+      max-width:200px;
+      margin-left: 45px;
+      margin-top: 20px;
+      text-align: justify;
+      text-align: center;
+      color: white;
+    }
+    #tri-para{
+      display: flex;
+      flex-wrap: wrap;
+      max-width:210px;
+      margin-left: 45px;
+      text-align: justify;
+      text-align: center;
+      color: white;
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+    
+    .main1_para{
+      display: flex;
+      flex-wrap: wrap;
+      max-width:210px;
+      margin-left: 45px;
+      text-align: justify;
+      text-align: center;
+      color: white;
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+  
+    #to-button{
+      justify-content: center;
+      /* margin:10px 10px 15px 62px;
+       */
+    }
+  
+    button{
+      border-radius: 22px;
+      background: none;
+      border-radius: 10px;
+      color: #EEEEEE;
+      border-color: #EEEEEE
+    }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #logo {
+      width: 100%;
+      background-color: white;
+      height: 11vh;
+      margin: 0px 0px 0px 0px;
+    }
+  
+    nav {
+      background-color: black;
+      height: 28vh;
+      padding-left: 0;
+      position: absolute;
+      
+    }
+  
+    nav ul {
+      display:grid;
+      padding: 0px;
+      text-align: center;
+      margin: 0px;
+      background-color: black;
+    }
+  
+    nav li {
+      list-style-type: none;
+      /*     margin: 3vh 0 10px; */
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+    }
+  
+    nav li a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      display: block;
+      padding: 10px;
+    }
+  
+    nav li:hover a {
+      background-color: brown;
+      height: 100%;
+    }
+    header{
+      height:535px;
+    }
+    #main {
+         display: flex;
+      flex-direction: column; 
+  /*     margin-top:350px; */
+      align-items:center;
+    }
+    #main1 {
+         display: flex;
+      flex-direction: column;
+      align-items:center;
+    }
+    .anime_main_div{
+      width:80%;
+      margin:0 0 30px 0;
+      height:500px;
+      border-radius: 0px 46px 0px 46px;
+    }
+   
+    .main1-img{
+      width:100px;
+      height:50px;
+    }
+    #cal-img{
+      width:100px;
+      height:100px;
+    }
+    #todo-img{
+      width:100px;
+      height:50px;
+    }
+    #tri-img{
+      width:100px;
+      height:50px;
+    }
+    
+    #port{
+      margin-top:85vh;
+    }
   }
-  #tri-para{
-    display: flex;
-    flex-wrap: wrap;
-    max-width:210px;
-    margin-left: 45px;
-    text-align: justify;
-    text-align: center;
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 0px;
-  }
-  #port-para{
-    display: flex;
-    flex-wrap: wrap;
-    max-width:210px;
-    margin-left: 45px;
-    text-align: justify;
-    text-align: center;
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 0px;
-  }
-  #you-para{
-    display: flex;
-    flex-wrap: wrap;
-    max-width:210px;
-    margin-left: 45px;
-    text-align: justify;
-    text-align: center;
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 0px;
-  }
-
-  #to-button{
-    justify-content: center;
-    /* margin:10px 10px 15px 62px;
-     */
-  }
-
-  button{
-    border-radius: 22px;
-    background: none;
-    border-radius: 10px;
-    color: #EEEEEE;
-    border-color: #EEEEEE
+  @media only screen and (min-width: 709px) {
+    .main1_div{
+      max-height: 420px;
+    }
+    #cal{
+      max-height: 420px;
+    }
+    #tri{
+      max-height: 420px;
+    }
+    #to{
+      max-height: 420px;
+    }
   }
