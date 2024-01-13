@@ -14,7 +14,7 @@ body{
       height:50px;
       color: #fff;
       text-align: center;
-      position: fixed;
+      position: absolute;
       top: 0;
   left: 0;
   right: 0;
@@ -107,19 +107,26 @@ body{
     }
     #main{
       /* background-color: brown; */
-      height: 900px;
+      /* height: 900px; */
       display: flex;
-      margin: 0%;
-      padding:autopooo;
+      margin: 0px 0 52px 0;
+      padding:auto;
       justify-content: center;
-      height:530px;
+      /* height:530px; */
       justify-content: space-around;
     }
     #main1{
       /* background-color: brown; */
-      height: 900px;
+      /* height: 0px; */
       display: flex;
-      margin: 0%;
+      margin: 0 0 52px 0;
+      padding:0 10px;
+      justify-content: center;
+      justify-content: space-around;
+    }
+    #main2{
+      display: flex;
+      margin: 0 0 52px 0;
       padding:0 10px;
       justify-content: center;
       justify-content: space-around;
@@ -166,7 +173,7 @@ body{
       flex-wrap: wrap;
       max-width:200px;
       margin-left: 45px;
-      margin-top: 20px;
+      margin-top: 30px;
       text-align: justify;
       text-align: center;
       color: white;
@@ -196,17 +203,18 @@ body{
     }
   
     #to-button{
-      justify-content: center;
-      /* margin:10px 10px 15px 62px;
-       */
+     
+       
     }
   
     button{
-      border-radius: 22px;
+      /* border-radius: 22px; */
       background: none;
       border-radius: 10px;
       color: #EEEEEE;
-      border-color: #EEEEEE
+      border-color: #EEEEEE;
+      justify-content: center;
+      margin:10px 0px 10px 0px;
     }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     #logo {
